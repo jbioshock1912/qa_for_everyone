@@ -1,1 +1,1 @@
-# qa_for_everyone
+# hackerrank
