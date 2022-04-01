@@ -1,6 +1,6 @@
 package qa_for_everyone;
 
-public class OutputFigure {
+public class OutputFigure5 {
 
     public static void drawLeftTriangle() {
         for (int i = 0; i < 10; i++) {
