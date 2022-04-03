@@ -9,4 +9,5 @@ public class Fighter {
         this.health = health;
         this.damagePerAttack = damagePerAttack;
     }
+
 }
