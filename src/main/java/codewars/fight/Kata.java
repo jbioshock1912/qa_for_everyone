@@ -1,9 +1,8 @@
 package codewars.fight;
 
 public class Kata {
-    public static String declareWinner(Fighter fighter1, Fighter fighter2, String firstAttacker) {
-        String attackText = "%s attacks %s; %s now has %d health. \n";
-        String finishText = "%s attacks %s; %s now has %d health and is dead. %s wins. \n";
+    private static String declareWinner(Fighter fighter1, Fighter fighter2, String firstAttacker) {
+        String winner = "";
         var attacker = fighter1;
         var defence = fighter2;
 
@@ -19,7 +18,8 @@ public class Kata {
             if (defence.health <= 0){
                 System.out.printf("%s attacks %s; %s now has %d health and is dead. %s wins. \n",
                         attacker.name, defence.name, defence.name, defence.health, attacker.name);
-                return attacker.name;
+                winner = attacker.name;
+                break;
             }
             else {
                 attacker.health = attacker.health - defence.damagePerAttack;
@@ -27,22 +27,18 @@ public class Kata {
                 if (attacker.health <= 0){
                     System.out.printf("%s attacks %s; %s now has %d health and is dead. %s wins. \n",
                             defence.name, attacker.name, attacker.name, attacker.health, defence.name);
-                    return defence.name;
+                    winner = defence.name;
+                    break;
                 }
             }
         }
-      return null;
+      return winner;
     }
 
 
     public static void main(String[] args) {
-        declareWinner(new Fighter("Lew", 10, 2),
-                new Fighter("Harry", 5, 4), "Lew");
-        int a = 4;
-        int b = 3;
-        String result = "test";
-        System.out.println(a + b + result);
-        System.out.println(result + a + b);
+        System.out.println(declareWinner(new Fighter("Lew", 10, 2),
+                new Fighter("Harry", 5, 4), "Lew"));
     }
 }
 
