@@ -1,16 +1,12 @@
 package codewars;
 
+/*
+Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+The output should be two capital letters with a dot separating them.
+*/
 public class AbbreviateTwoWords {
     public static String abbrevName(String name) {
-        String firstLetter = name.substring(0, 1);
-       String secondLetter = "";
-       String[] tempArray = name.split("");
-        for (int i = 0; i < tempArray.length; i++){
-            if (tempArray[i].equals(" ")){
-                secondLetter = tempArray[i + 1];
-                break;
-            }
-        }
-        return String.format("%s.%s", firstLetter, secondLetter).toUpperCase();
+        String[] tempArray = name.split(" ");
+        return String.format("%s.%s", tempArray[0].substring(0, 1), tempArray[1].substring(0, 1)).toUpperCase();
     }
 }
