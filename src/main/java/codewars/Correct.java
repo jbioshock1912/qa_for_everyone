@@ -7,8 +7,10 @@ S is misinterpreted as 5
 O is misinterpreted as 0
 I is misinterpreted as 1
 The test cases contain numbers only by mistake.*/
-public class Correct {
-    public static String correct(String string) {
-        return string.replace('1','I').replace('0','O').replace('5','S');
+class Correct {
+    static String correct(String string) {
+        return string.replace('1','I')
+                .replace('0','O')
+                .replace('5','S');
     }
 }
