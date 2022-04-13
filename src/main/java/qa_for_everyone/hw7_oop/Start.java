@@ -4,8 +4,5 @@ public class Start {
 // а почему объект нельзя здесь создать???
 
     public static void main(String[] args) {
-
     }
-
-
 }

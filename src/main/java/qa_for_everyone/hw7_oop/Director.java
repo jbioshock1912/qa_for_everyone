@@ -5,7 +5,7 @@ import java.util.Objects;
 public class Director extends Employee {
     private int NumberOfSubordinates;
 
-    public Director(String name, double salary, int numberOfSubordinates) {
+    Director(String name, double salary, int numberOfSubordinates) {
         super(name, salary);
         NumberOfSubordinates = numberOfSubordinates;
     }
@@ -17,7 +17,6 @@ public class Director extends Employee {
     public void setNumberOfSubordinates(int numberOfSubordinates) {
         NumberOfSubordinates = numberOfSubordinates;
     }
-
 
     public double getSalary() {
         double result = super.getBaseSalary();

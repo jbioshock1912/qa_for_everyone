@@ -25,7 +25,7 @@ public class EmployeeHelper {
         return employeeFindByName;
     }
 
-    public static List<Employee> findEmployeeByText(Employee[] arrayEmployee, String text) {
+    static List<Employee> findEmployeeByText(Employee[] arrayEmployee, String text) {
         List<Employee> employeeFindText = new ArrayList<Employee>();
         for (Employee employee : arrayEmployee) {
             if (employee.getName().contains(text)) {
@@ -35,7 +35,7 @@ public class EmployeeHelper {
         return employeeFindText;
     }
 
-    public static double calculatingAllSalary(Employee[] arrayEmployee) {
+    static double calculatingAllSalary(Employee[] arrayEmployee) {
         double allSalary = 0.0;
         for (Employee employee : arrayEmployee) {
             allSalary = allSalary + employee.getBaseSalary(); // если я его переопределила то считаться будет верно?у директора, менеджера и та кдалее
@@ -43,11 +43,11 @@ public class EmployeeHelper {
         return allSalary;
     }
 
-    public static double calculateSalaryForEmployee(Employee employee) {
+    static double calculateSalaryForEmployee(Employee employee) {
         return employee.getBaseSalary();
     }
 
-    public static double getMinSalary(Employee[] arrayEmployee) {
+    static double getMinSalary(Employee[] arrayEmployee) {
         double minSalary = 0.0; // а если Employee null ?
         for (Employee employee : arrayEmployee) {
             if (employee.getBaseSalary() < minSalary) {
@@ -57,7 +57,7 @@ public class EmployeeHelper {
         return minSalary;
     }
 
-    public static double getMaxSalary(Employee[] arrayEmployee) {
+    static double getMaxSalary(Employee[] arrayEmployee) {
         double maxSalary = 0.0;
         for (Employee employee : arrayEmployee) {
             if (employee.getBaseSalary() > maxSalary) {
@@ -67,7 +67,7 @@ public class EmployeeHelper {
         return maxSalary;
     }
 
-    public static int getMinCountOfSubordinates(Manager[] arrayManager) {
+    static int getMinCountOfSubordinates(Manager[] arrayManager) {
         int minCountOfSubordinates = 0;
         for (Manager manager : arrayManager) { // почему если вместо Manager поставить Employee то он не видит метода получить починенных?
             if (manager.getNumberOfSubordinates() < minCountOfSubordinates) {
@@ -77,7 +77,7 @@ public class EmployeeHelper {
         return minCountOfSubordinates;
     }
 
-    public static double getMaxBonusOfSalary(Manager[] arrayManager) {
+    static double getMaxBonusOfSalary(Manager[] arrayManager) {
         double maxBonus = 0.0;
         for (Manager manager : arrayManager) {
             double difference = manager.getSalary() - manager.getBaseSalary();
@@ -98,8 +98,6 @@ public class EmployeeHelper {
         }
         return minBonus;
     }
-
-
 }
 
 

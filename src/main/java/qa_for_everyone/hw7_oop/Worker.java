@@ -1,8 +1,8 @@
 package qa_for_everyone.hw7_oop;
 
-public class Worker extends Employee {
+class Worker extends Employee {
 
-    public Worker(String name, double salary) {
+    Worker(String name, double salary) {
         super(name, salary);
     }
 }

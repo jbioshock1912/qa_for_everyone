@@ -2,8 +2,7 @@ package qa_for_everyone.hw7_oop;
 
 public class Manager extends Director {
 
-
-    public Manager(String name, double salary, int numberOfSubordinates) {
+    Manager(String name, double salary, int numberOfSubordinates) {
         super(name, salary, numberOfSubordinates);
     }
 
