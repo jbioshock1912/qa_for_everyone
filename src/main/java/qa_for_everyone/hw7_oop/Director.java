@@ -2,29 +2,21 @@ package qa_for_everyone.hw7_oop;
 
 import java.util.Objects;
 
-public class Director extends Employee {
-    private int NumberOfSubordinates;
+public class Director extends Manager {
 
-    Director(String name, double salary, int numberOfSubordinates) {
-        super(name, salary);
-        NumberOfSubordinates = numberOfSubordinates;
+    public Director(String name, double salary, int numberOfSubordinates) {
+        super(name, salary, numberOfSubordinates);
     }
 
-    int getNumberOfSubordinates() {
-        return NumberOfSubordinates;
-    }
-
-    public void setNumberOfSubordinates(int numberOfSubordinates) {
-        NumberOfSubordinates = numberOfSubordinates;
-    }
-
+    @Override
     public double getSalary() {
-        double result = super.getBaseSalary();
-        if (getNumberOfSubordinates() > 0) {
+        double result = getBaseSalary();
+        if (getNumberOfSubordinates() > 0){
             result = super.getBaseSalary() * (getNumberOfSubordinates() / 100.0 * 9);
         }
         return result;
     }
+
 
     @Override
     public int hashCode() {

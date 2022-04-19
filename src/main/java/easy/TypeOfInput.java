@@ -19,3 +19,4 @@ public class TypeOfInput {
         System.out.println("Int: " + i);
     }
 }
+

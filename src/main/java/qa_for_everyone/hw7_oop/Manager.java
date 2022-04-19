@@ -1,20 +1,32 @@
 package qa_for_everyone.hw7_oop;
 
-public class Manager extends Director {
+public class Manager extends Employee {
 
-    Manager(String name, double salary, int numberOfSubordinates) {
-        super(name, salary, numberOfSubordinates);
+    private int NumberOfSubordinates;
+
+    public Manager(String name, double salary, int numberOfSubordinates) {
+        super(name, salary);
+        NumberOfSubordinates = numberOfSubordinates;
     }
 
+    public Manager(String name, double salary) {
+        super(name, salary);
+    }
+
+    int getNumberOfSubordinates() {
+        return NumberOfSubordinates;
+    }
+
+    public void setNumberOfSubordinates(int numberOfSubordinates) {
+        this.NumberOfSubordinates = numberOfSubordinates;
+    }
+
+    @Override
     public double getSalary() {
        double result = super.getBaseSalary();
         if (getNumberOfSubordinates() > 0){
             result = super.getBaseSalary() * (getNumberOfSubordinates() / 100.0 * 3);
         }
         return result;
-    }
-
-    public void setSalary(double salary) {
-        salary = getSalary();
     }
 }

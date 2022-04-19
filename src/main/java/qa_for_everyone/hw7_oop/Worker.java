@@ -5,7 +5,11 @@ class Worker extends Employee {
     Worker(String name, double salary) {
         super(name, salary);
     }
-}
 
-    // метод  гет сэлэри не переопределяем так как и так базовая ставка
+
+    @Override
+    double getSalary() {
+        return getBaseSalary();
+    }
+}
 

@@ -7,6 +7,13 @@ public class Employee {
     private double salaryPerDay;
     private Sex sex;
 
+    public Employee(String name, int age, double salaryPerDay, Sex sex) {
+        this.name = name;
+        this.age = age;
+        this.salaryPerDay = salaryPerDay;
+        this.sex = sex;
+    }
+
     public String getName() {
         return name;
     }
@@ -40,10 +47,6 @@ public class Employee {
     }
 
     public double getSalary(Month[] monthArray){
-        double allDaysSalary = 0.0;
-        int year = 2022;
-        MonthUtils.setFebruary(monthArray, year);
-        int workDays = MonthUtils.countWorkDays(monthArray, year);
-        return allDaysSalary = allDaysSalary * workDays;  // а как установить потмо зарплату конкретному рабочему?
+        return MonthUtils.countWorkDays(monthArray) * salaryPerDay; // зачем создали метод котоырй считает рабочие дни?? ведь это всё есть в массиве можно оттуда дергать рабочие дни
     }
 }
