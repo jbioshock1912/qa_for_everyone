@@ -15,11 +15,47 @@ class MonthUtils {
     public static final Month NOVEMBER = new Month("November", 30, 20);
     public static final Month DECEMBER = new Month("December", 31, 21);
 
-    static int countWorkDays(Month[] monthArray) {
+    static int countWorkDays(Month[] monthArray) { // как так получается что мы передаем в мтеод наш массив с месяцами???
         int numberOfWorkDay = 0;
         for (Month value : monthArray) {
             numberOfWorkDay = numberOfWorkDay + value.getNumberOfWorkDays();
         }
         return numberOfWorkDay;
+    }
+
+    static Month[] getQuarter(Month[] monthArray, int numberQuarter) {
+        Month[] monthQuarter = new Month[3];
+        switch (numberQuarter) {
+            case (1):
+                monthQuarter = new Month[]{JANUARY, FEBRUARY, MARCH};
+                break;
+
+            case (2):
+                monthQuarter = new Month[]{APRIL, MAY, JUNE};
+                break;
+
+            case (3):
+                monthQuarter = new Month[]{JULY, AUGUST, SEPTEMBER};
+                break;
+
+            case (4):
+                monthQuarter = new Month[]{OCTOBER, NOVEMBER, DECEMBER};
+                break;
+        }
+        return monthQuarter;
+    }
+
+    static Month[] getHalfYear(Month[] monthArray, int numberHalfYear) {
+        Month[] monthHalfYear = new Month[6];
+        switch (numberHalfYear) {
+            case (1):
+                monthHalfYear = new Month[]{JANUARY, FEBRUARY, MARCH, APRIL, MAY, JUNE};
+                break;
+
+            case (2):
+                monthHalfYear = new Month[]{JULY, AUGUST, SEPTEMBER, OCTOBER, NOVEMBER, DECEMBER};
+                break;
+        }
+        return monthHalfYear;
     }
 }

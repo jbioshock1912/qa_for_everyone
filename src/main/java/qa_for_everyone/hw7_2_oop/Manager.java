@@ -2,7 +2,7 @@ package qa_for_everyone.hw7_2_oop;
 
 import qa_for_everyone.oop3.Sex;
 
-public class Manager extends Employee {
+public final class Manager extends Employee {
 
     private int numberOfSubordinates;
 

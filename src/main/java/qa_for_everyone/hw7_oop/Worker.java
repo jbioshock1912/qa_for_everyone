@@ -9,7 +9,12 @@ class Worker extends Employee {
 
     @Override
     double getSalary() {
-        return getBaseSalary();
+        return getBaseSalary(); // зачем этот метод?
+    }
+
+    @Override
+   final double getBaseSalary() {
+        return super.getBaseSalary();
     }
 }
 

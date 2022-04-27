@@ -2,7 +2,8 @@ package qa_for_everyone.hw7_oop;
 
 import java.util.Objects;
 
-public class Director extends Manager {
+public final class Director extends Manager {
+    public static final int COEFFICIENT_9 = 9;
 
     public Director(String name, double salary, int numberOfSubordinates) {
         super(name, salary, numberOfSubordinates);
@@ -12,7 +13,7 @@ public class Director extends Manager {
     public double getSalary() {
         double result = getBaseSalary();
         if (getNumberOfSubordinates() > 0){
-            result = super.getBaseSalary() * (getNumberOfSubordinates() / 100.0 * 9);
+            result = super.getBaseSalary() * (getNumberOfSubordinates() / 100.0 * COEFFICIENT_9);
         }
         return result;
     }

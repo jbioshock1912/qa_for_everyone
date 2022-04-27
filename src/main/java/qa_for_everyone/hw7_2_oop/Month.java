@@ -1,7 +1,7 @@
 package qa_for_everyone.hw7_2_oop;
 
-public class Month {
-    private String month;
+public final class Month {
+    private final String month;
     private int numberOfAllDays;
     private int numberOfWorkDays;
 
