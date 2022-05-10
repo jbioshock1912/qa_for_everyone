@@ -6,14 +6,13 @@ class Worker extends Employee {
         super(name, salary);
     }
 
-
     @Override
     double getSalary() {
         return getBaseSalary(); // зачем этот метод?
     }
 
     @Override
-   final double getBaseSalary() {
+    final double getBaseSalary() {
         return super.getBaseSalary();
     }
 }

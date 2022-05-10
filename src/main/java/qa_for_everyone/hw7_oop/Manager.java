@@ -1,6 +1,7 @@
 package qa_for_everyone.hw7_oop;
 
 public class Manager extends Employee {
+
     public static final int COEFFICIENT_3 = 3;
 
     private int NumberOfSubordinates;
