@@ -4,7 +4,8 @@
 <p style="color:SlateBlue;"><b><i> codewars</i></b> </p>
 <p style="color:SlateBlue;"><b><i> oop</i></b> </p>
 <p style="color:SlateBlue;"><b><i> unit test</i></b> </p>
-=======
+
+
 Codewars Task1
 Create a public class called Cube without a constructor which gets one single private integer variable Side, a getter GetSide() and a setter SetSide(int num) method for this property. 
 Actually, getter and setter methods are not the common way to write this code in C#. In the next kata of this series, we gonna refactor the code and make it a bit more professional...
@@ -30,6 +31,7 @@ Death is defined as having health <= 0.
 Each fighter will be a Fighter object/instance. See the Fighter class below in your chosen language.
 Both health and damagePerAttack (damage_per_attack for python) will be integers larger than 0. 
 You can mutate the Fighter objects.
+
 
 Таск1 Map
 Необходимо создать класс с тремя методами:
@@ -105,6 +107,4 @@ String[][] array = {{“Привет”, “всем”, “кто”}, {“из
 необходимо подсчитать количество строк в массиве, которые не содержат буквы “е”.
 
 Таск5 Нарисовать фигуры (цикл в фикле)
-
-
 
