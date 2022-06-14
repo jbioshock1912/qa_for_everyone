@@ -1,7 +1,7 @@
 package codewars;
 
 public class Cube{
-    int side;
+    private int side;
 
     public int getSide(){
         return side;
