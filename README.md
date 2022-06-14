@@ -1,3 +1,10 @@
+
+
+<p style="color:SlateBlue;"><b><i> hackerrank</i></b> </p>
+<p style="color:SlateBlue;"><b><i> codewars</i></b> </p>
+<p style="color:SlateBlue;"><b><i> oop</i></b> </p>
+<p style="color:SlateBlue;"><b><i> unit test</i></b> </p>
+=======
 Codewars Task1
 Create a public class called Cube without a constructor which gets one single private integer variable Side, a getter GetSide() and a setter SetSide(int num) method for this property. 
 Actually, getter and setter methods are not the common way to write this code in C#. In the next kata of this series, we gonna refactor the code and make it a bit more professional...
@@ -98,43 +105,6 @@ String[][] array = {{“Привет”, “всем”, “кто”}, {“из
 необходимо подсчитать количество строк в массиве, которые не содержат буквы “е”.
 
 Таск5 Нарисовать фигуры (цикл в фикле)
-Задача №1
-
-0  1  2  3  4  5  6  7  8  9
-0  1  2  3  4  5  6  7  8
-0  1  2  3  4  5  6  7
-0  1  2  3  4  5  6
-0  1  2  3  4  5
-0  1  2  3  4
-0  1  2  3
-0  1  2
-0  1
-0
 
 
-Задача №2
 
-0  1  2  3  4  5  6  7  8  9
-    0  1  2  3  4  5  6  7  8
-        0  1  2  3  4  5  6  7
-             0  1  2  3  4  5  6
-                 0  1  2  3  4  5
-                     0  1  2  3  4
-                         0  1  2  3
-                             0  1  2
-                                 0  1
-                                     0
-
-
-Задача №3
-
-9 8 7 6 5 4 3 2 1 0 1 2 3 4 5 6 7 8 9
-   8 7 6 5 4 3 2 1 0 1 2 3 4 5 6 7 8
-      7 6 5 4 3 2 1 0 1 2 3 4 5 6 7
-         6 5 4 3 2 1 0 1 2 3 4 5 6
-            5 4 3 2 1 0 1 2 3 4 5
-               4 3 2 1 0 1 2 3 4
-                  3 2 1 0 1 2 3
-                     2 1 0 1 2
-                        1 0 1
-                           0
