@@ -1,6 +1,3 @@
-# hackerrank
-# qa_for_everyone
-
 Codewars Task1
 Create a public class called Cube without a constructor which gets one single private integer variable Side, a getter GetSide() and a setter SetSide(int num) method for this property. 
 Actually, getter and setter methods are not the common way to write this code in C#. In the next kata of this series, we gonna refactor the code and make it a bit more professional...
@@ -10,7 +7,6 @@ initialise the side to 0.
 
 Codewars Task2
 Write a class Block that creates a block (Duh..)
-##Requirements
 The constructor should take an array as an argument, this will contain 3 integers 
 of the form [width, length, height] from which the Block should be created.
 Define these methods:
@@ -27,8 +23,6 @@ Death is defined as having health <= 0.
 Each fighter will be a Fighter object/instance. See the Fighter class below in your chosen language.
 Both health and damagePerAttack (damage_per_attack for python) will be integers larger than 0. 
 You can mutate the Fighter objects.
-=======
-# hackerrank
 
 Таск1 Map
 Необходимо создать класс с тремя методами:
